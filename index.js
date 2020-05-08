@@ -71,7 +71,7 @@ async function func() {
             </div>
           </div>
           <div class="col-lg-4 ">
-            <img src="` + data.results[i]["multimedia"][4]["url"] + `" class="card-img " alt="..."  height="300"/>
+            <img src="` + data.results[i]["multimedia"][4]["url"] + `" class="card-img " alt="..."  style="height:50vh;"/>
           </div>
         </div>
       </div>
