@@ -62,8 +62,8 @@ async function func() {
           <div class="col-lg-8 ">
             <div class="card-body ">
             <p class="text-primary text-capitalize font-weight-bold">` + data.results[i]["section"] + `</p>
-              <h5 class="card-title font-weight-bolder">` + data.results[i]["title"] + `</h5>
-              <p class="card-text"><small class="text-muted">` + data.results[i]["byline"] + `</small></p>
+              <h5 class="card-title font-weight-bolder" style="font-family: 'Times New Roman', Times, serif; font-size:5vh;">` + data.results[i]["title"] + `</h5>
+              <p class="card-text"><small class="text-muted">` + data.results[i]["item_type"] + `&nbsp;` + data.results[i]["byline"] + `</small></p>
               <p class="card-text"><small class="text-muted">` + udate + `</small></p>
               <p class="card-text">` + data.results[i]["abstract"] + `</p>
               <a href=` + data.results[i]["short_url"] + ` class="text-decoration-none" target="_blank">Continue reading...</a>
