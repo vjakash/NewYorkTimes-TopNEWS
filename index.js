@@ -4,13 +4,18 @@ var sec = ["arts", "automobiles", "books", "business", "fashion", "food", "healt
     "t-magazine", "travel", "upshot", "us", "world"
 ];
 async function func() {
+    document.getElementById("row").innerHTML = "";
+    document.getElementById("loader").innerHTML = `<div class="col-lg-12 text-center ">
+    <div class="lds-hourglass mt-5"></div>
+</div>`;
     var catog = document.getElementById("inputGroupSelect02").value;
     console.log(catog);
     var response = await fetch("https://api.nytimes.com/svc/topstories/v2/" + sec[catog] + ".json?api-key=Fa1VrfxOoOo5DU3UuNQG8B2Yjt0yvgt6");
     console.log(response);
     var data = await response.json();
     console.log(data);
-    document.getElementById("row").innerHTML = "";
+    document.getElementById("loader").innerHTML = "";
+
     for (let i in data.results) {
         var mydate = new Date(data.results[i]["created_date"]);
         var mon = "";
