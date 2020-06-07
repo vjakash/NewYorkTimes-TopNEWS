@@ -61,7 +61,7 @@ async function func() {
         var udate = mon + " " + cdate;
         document.getElementById("row").innerHTML += `
         <div class="col-lg-12 ">
-        <div class="card mb-3 shadow p-3 mb-5 bg-dark rounded text-white" >
+        <div class="card mb-3 shadow p-3 mb-5 bg-light rounded text-dark" >
         <div class="row no-gutters">
           
           <div class="col-lg-8 ">
